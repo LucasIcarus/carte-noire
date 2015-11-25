@@ -1,31 +1,87 @@
 # Site settings
-title: "Carte Noire"
-email: jacob@jacobtomlinson.co.uk
-description: "A dark blog theme for Jekyll."
+title: Quantum Dot
+SEOTitle: 凡辞的博客 | Quantum Dot
+email: lucasicarus@hotmail.com
+description: "平凡者的人生和学习、思索与进益 | 凡辞，Postgraduate of ME,Beginner of Front-end technology. | 这里是 @凡辞 的个人博客，抓住时间的每一次跃动。"
 baseurl: ""
-url: "http://carte-noire.jacobtomlinson.co.uk/"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+keyword: "凡辞, Fancy, FancyIcarus, fancy, fancyicarus, 絮雨倾尘, 絮尘倾依, @凡辞, 凡辞的博客, FancyBlog, 个人网站, 前端, 互联网, 微电子, 量子点, 林芝, 林芝的男朋友, MasacLin"
+url: "http://linfatz.com"
+# title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
 title_image: "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
-google_analytics: "UA-20365477-4"
-disqus_account: cartenoire
+# disqus_account: cartenoire
 github_repository: https://github.com/jacobtomlinson/carte-noire
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
-linkedin_link: http://carte-noire.jacobtomlinson.co.uk/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
+RSS: false
+weibo_username:     絮尘倾依
+zhihu_username:     凡辞
+github_username:    LucasIcarus
+#twitter_username:  
+#facebook_username:  
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
 footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 permalink: pretty
 exclude: [vendor]
+gems: [jekyll-paginate]
+paginate: 5
+highlighter: rouge
+
+# Markdown settings
+# markdown: redcarpet
+# redcarpet:
+#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Duoshuo settings
+duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true             # set to false if you want to use Comment without Sharing
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: linfatz.com
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，我想去看看。"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+# Friends
+friends: [
+    {
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    },{
+        title: "",
+        href: ""
+    }
+]
