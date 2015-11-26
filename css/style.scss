@@ -1,9 +1,40 @@
 ---
 ---
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700);
+//@import url(http://fonts.googleapis.com/css?family=Montserrat);
+//@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700);
+/* Fonts */
+@mixin font-family{
+	/* Hux learn from
+ *     TypeIsBeautiful,
+ *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
+ */
+	font-family: // System Font            // https://www.webkit.org/blog/3709/using-the-system-font-in-web-content/
+			-apple-system, // OSX ^10.11 & iOS ^9  San Francisco & 苹方
 
+				// English First
+			"Helvetica Neue", // OSX
+			"Arial", // Win "Helvetica"
+				//" Segoe UI",            // Win ^8
+
+				// Chinese Fallback
+			"PingFang SC",      // OSX ^10.11 & iOS ^9  苹方（华康信凭黑）
+			"Hiragino Sans GB", // OSX ^10.6            冬青黑体
+			"STHeiti",          // OSX <10.6  & iOS <9  华文黑体
+			"Microsoft YaHei",  // Win                  微软雅黑
+			"Microsoft JhengHei", // Win                  微软正黑
+			"Source Han Sans SC", // SourceHan - begin    思源黑体
+			"Noto Sans CJK SC",
+			"Source Han Sans CN",
+			"Noto Sans SC",
+			"Source Han Sans TC",
+			"Noto Sans CJK TC", // SourceHan - end
+			"WenQuanYi Micro Hei", // Linux                文泉驿微米黑
+			SimSun, // Win old              中易宋体
+			sans-serif; // System Fallback
+
+	line-height: 1.7;
+}
 /* Colours */
 $twitter:        #6dabda;
 $linkedin:       #2b77b1;
@@ -40,7 +71,7 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	@include font-family;
 	font-weight: 300;
 	background-color: $dark;
 	color: $white;
@@ -100,7 +131,7 @@ ul {
 	width: 100%;
 
 	@media (min-width: $screen-sm-min) {
-		font-size: 62px;
+		font-size: 40px;
 		margin-left: -10%;
 		width: 120%;
 	}
@@ -232,7 +263,7 @@ ul {
 	}
 
 	.author-header {
-		font-family: 'Montserrat', sans-serif;
+		@include font-family;
 		color: $light-blue;
 		margin-top: 0px;
 		padding-top: 15px;
@@ -307,12 +338,24 @@ ul {
 
 			}
 
-			li:nth-last-of-type(1) {
-
+			li.li_button {
+				display: inline;
 				small {
 					font-size: 16px;
+					line-height: 1.7;
+					text-transform: uppercase;
+					font-weight: 800;
+					letter-spacing: 1px;
+					padding: 10px;
+					background-color: $medium;
+					border-radius: 0;
 				}
-
+			}
+			li.next {
+				float: right;
+			}
+			li.previous {
+				float: left;
 			}
 		}
 
@@ -422,16 +465,26 @@ ul {
 	max-height: 100%;
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Montserrat', sans-serif;
+		@include font-family;
 		margin-bottom: 10px;
 	}
 
 	h2 {
-		font-size: 36px;
+		font-size: 28px;
+		color: $light-medium;
+		margin-left: 1em;
 	}
 
 	h3 {
-		font-size: 28px;
+		font-size: 24px;
+		color: lighten($light-medium,10%);
+		margin-left: 2em;
+	}
+
+	h4 {
+		font-size: 20px;
+		color: lighten($light-medium,20%);
+		margin-left: 3em;
 	}
 
 	p {
@@ -543,7 +596,7 @@ ul {
 			padding-bottom: 10px;
 
 			@media (min-width: $screen-sm-min) {
-				font-size: 24px;
+				font-size: 18px;
 				padding-left: 30px;
 				padding-right: 30px;
 				padding-top: 40px;
@@ -553,9 +606,9 @@ ul {
 			img {
 				max-width: 100%;
 				padding: 10px;
-    		display: block;
-    		margin-left: auto;
-    		margin-right: auto
+    		    display: block;
+    		    margin-left: auto;
+    		    margin-right: auto
 			}
 
 			li {
@@ -565,7 +618,7 @@ ul {
 			blockquote {
 				position: relative;
 				width: 100%;
-		    margin-left: -15px;
+		        margin-left: -15px;
 				padding-right: 45px;
 				background-color: $darker;
 				color: white;
@@ -586,16 +639,16 @@ ul {
 				}
 
 				:before {
-    			font-family: "Times New Roman";
+					@include font-family;
+					line-height: 1.0;
 					color: $light-medium;
-			    content: "“";
-			    position: absolute;
-			    top: 15px;
-			    left: 15px;
-			    font-size: 65px;
-			    font-weight: bold;
-				}
-
+			    	content: "“";
+			    	position: absolute;
+			    	top: 15px;
+			    	left: 15px;
+			    	font-size: 65px;
+			    	font-weight: bold;
+					}
 			}
 
 			.alignright {
@@ -618,9 +671,10 @@ ul {
 					padding-right: 60px;
 				}
 
+
 				pre {
 					width: 100%;
-					font-family: 'Anonymous Pro';
+					@include font-family;
 					background-color: $darker;
 					color: $white;
 					font-size: 12px;
@@ -629,6 +683,33 @@ ul {
 					padding-top: 20px;
 					padding-bottom: 20px;
 					padding-right: 15px;
+					box-sizing: content-box;
+					border-radius: 0;
+					margin-bottom: 10px;
+					margin-top: 10px;
+
+					@media (min-width: $screen-sm-min) {
+						padding-left: 50px;
+						padding-right: 10px;
+						margin-bottom: 40px;
+						font-size: 15px;
+					}
+				}
+			}
+			.highlighter-rouge {
+				width: 100%;
+				box-sizing: content-box;
+				pre {
+					width: 100%;
+					@include font-family;
+					background-color: $darker;
+					color: $white;
+					font-size: 12px;
+					border: none;
+					padding-left: 15px;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					//padding-right: 15px;
 					box-sizing: content-box;
 					border-radius: 0;
 					margin-bottom: 10px;
@@ -676,6 +757,19 @@ ul {
 				margin-bottom: 10px;
 				text-align: center;
 
+			}
+			.pager{
+				ul{
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+				li.next{
+					float: left;
+				}
+				li.previous{
+					float: right;
+				}
 			}
 
 		}

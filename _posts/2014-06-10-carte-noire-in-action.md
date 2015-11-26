@@ -37,7 +37,8 @@ class Awesome < ActiveRecord::Base
 end
 {% endhighlight %}
 
-```html
+```
+html
 <!DOCTYPE html>
 <title>Title</title>
 
