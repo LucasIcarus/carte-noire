@@ -1,10 +1,15 @@
 <div class="footer clearfix">
-  <div class="col-md-6">
-    {{ site.footer_left }}
-  </div>
-  <div class="col-md-6">
-    {{ site.footer_right }}
-  </div>
+    <p class="copyright text-muted">
+        Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+        <br>
+        Theme by <a href="http://linfatz.com">凡辞</a> |
+    </p>
+    <div class="col-md-6">
+        {{ site.footer_left }}
+    </div>
+    <div class="col-md-6">
+        {{ site.footer_right }}
+    </div>
 </div>
 
 <!-- jQuery -->
@@ -17,30 +22,30 @@
 <script src="http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
-   $(document).ready(function() {
-      $("#my-menu").mmenu().on( "closed.mm", function() {
+    $(document).ready(function () {
+        $("#my-menu").mmenu().on("closed.mm", function () {
             $(".menu-button").show();
-         });
-      $(".menu-button").click(function() {
-        $(".menu-button").hide();
-        $("#my-menu").trigger("open.mm");
-      });
-   });
+        });
+        $(".menu-button").click(function () {
+            $(".menu-button").hide();
+            $("#my-menu").trigger("open.mm");
+        });
+    });
 </script>
 
 {% if site.google_analytics %}
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-          _gaq.push(['_trackPageview']);
-  (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-  })();
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 {% endif %}
