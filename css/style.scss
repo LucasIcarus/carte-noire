@@ -169,6 +169,7 @@ ul {
 
 	p {
 		margin-bottom: 5px;
+        margin-top: 5px;
 	}
 
 	a, a:active {
@@ -185,6 +186,31 @@ ul {
 			margin-right: 10px;
 		}
 	}
+    .tags{
+      margin-bottom: -5px;
+      a,.tag{
+        display: inline-block;
+        border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 999em;
+        padding: 0 10px;
+        color: rgba(255,255,255,1);
+        line-height: 24px;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 0 1px;
+        margin-bottom: 6px;
+        &:hover, &:active{
+          color:white;
+          border-color: white;
+          background-color: rgba(255,255,255,0.4);
+          text-decoration: none;
+
+        }
+        @media only screen and (min-width: 768px) {
+          margin-right: 5px;
+        }
+    }
+  }
 }
 
 .links {
@@ -457,6 +483,64 @@ ul {
 			padding-right: 30px;
 		}
 	}
+}
+
+.tags{
+  margin-bottom: -5px;
+  a,.tag{
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 999em;
+    padding: 0 10px;
+    color: $dark;
+    line-height: 24px;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0 1px;
+    margin-bottom: 6px;
+    &:hover, &:active{
+      color:white;
+      border-color: white;
+      background-color: rgba(255,255,255,0.4);
+      text-decoration: none;
+
+    }
+    @media only screen and (min-width: 768px) {
+      margin-right: 5px;
+    }
+  }
+}
+
+#tag_cloud{
+  margin:20px 0 15px 0;
+  a,.tag{
+    font-size: 14px;
+    border: none;
+    line-height: 28px;
+    margin: 0 2px;
+    margin-bottom: 8px;
+    background: #D6D6D6;
+    &:hover, &:active{
+      background-color: #0085a1 !important;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+  .tags {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    a, a:active {
+      color: $white;
+    }
+
+    a:hover {
+      color: $light-blue;
+    }
+
+  }
 }
 
 
@@ -883,6 +967,11 @@ ul {
 	width: 100%;
 	margin-left: 0%;
 
+    p{
+      margin: 0 auto;
+      text-align: center;
+    }
+
 	.fa-heart {
 		color: $red;
 	}
@@ -905,7 +994,8 @@ ul {
 	div {
 		color: $light-medium;
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 20px;
 	}
 }
+

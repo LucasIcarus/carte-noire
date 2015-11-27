@@ -7,7 +7,7 @@ baseurl: ""
 keyword: "凡辞, Fancy, FancyIcarus, fancy, fancyicarus, 絮雨倾尘, 絮尘倾依, @凡辞, 凡辞的博客, FancyBlog, 个人网站, 前端, 互联网, 微电子, 量子点, 林芝, 林芝的男朋友, MasacLin"
 url: "http://linfatz.com"
 # title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
-title_image: "http://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_image: "http://www.gravatar.com/avatar/e115367caddaf1a7edc10a0ff960dabfs=500&d=mm"
 # disqus_account: cartenoire
 github_repository: https://github.com/jacobtomlinson/carte-noire
 addthis_id: ra-513c6fa83da6ec67
@@ -22,8 +22,8 @@ github_username:    LucasIcarus
 #facebook_username:  
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Modify with <i class=\"fa fa-heart\"></i> by <a href=\"http://weibo.com/fancypro\">凡辞</a> and Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+footer_right: "on Github &nbsp;<i class=\"fa fa-github-alt\"></i> <iframe style=\"margin-left: 2px; margin-bottom:-5px;\"frameborder=\"0\" scrolling=\"0\" width=\"91px\" height=\"20px\"src=\"https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true\" ></iframe>"
 
 # Build settings
 permalink: pretty
