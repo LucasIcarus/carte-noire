@@ -340,7 +340,7 @@ ul {
 		h2 {
 			margin-bottom: 30px;
 			color: $light-blue;
-			font-size: 26px;
+			font-size: 36px;
 		}
 
 		ul {
@@ -445,6 +445,11 @@ ul {
 			}
 		}
 	}
+    .listing-seperator{
+        float: left;
+        display: block;
+        color: $light-blue;
+    }
 
 }
 
