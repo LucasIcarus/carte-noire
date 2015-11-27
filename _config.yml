@@ -7,11 +7,13 @@ baseurl: ""
 keyword: "凡辞, Fancy, FancyIcarus, fancy, fancyicarus, 絮雨倾尘, 絮尘倾依, @凡辞, 凡辞的博客, FancyBlog, 个人网站, 前端, 互联网, 微电子, 量子点, 林芝, 林芝的男朋友, MasacLin"
 url: "http://linfatz.com"
 # title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
-title_image: "http://www.gravatar.com/avatar/e115367caddaf1a7edc10a0ff960dabfs=500&d=mm"
+title_image:
 # disqus_account: cartenoire
 github_repository: https://github.com/jacobtomlinson/carte-noire
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
+index_y: false
+post_y: false
 
 # Social usernames/URLs
 RSS: false
@@ -62,6 +64,9 @@ sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+#Head portrait & social_links
+hp_sl: false
 
 # Friends
 friends: [

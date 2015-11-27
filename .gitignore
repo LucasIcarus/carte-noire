@@ -48,9 +48,16 @@ _site/
 
 
 # Ruby
+<<<<<<< HEAD
 Gemfile
 .lock
 
 
 #JetBrains
 .idea/
+=======
+Gemfile.lock
+
+#JetBrains
+.idea/
+>>>>>>> ab19271a9f8306e04e24e4be437d73aefdd1d1cb
