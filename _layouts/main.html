@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="container-fluid index">
+    <div class="row index all-posts">
+        {% if site.posts %}
+        <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+            {% endif %}
+            <div class="col-md-12 main content-panel">
+
+                <!--Decide whether to display portrait and social links or not by Attr:hp_sl -->
+                {% if page.hp_sl %}
+                <div class="title_image">
+                    <img src="{{ site.baseurl }}/favicons/old_portrait.jpg" class="img-circle about-image"
+                         height="150"
+                         width="150" alt="{{ site.title }}"/>
+                </div>
+                {% endif %}
+
+                {% if site.data.thumbnail[page.thumbnail] %}
+                <div class="thumb">
+                    <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}"/>
+                </div>
+                {% elsif page.thumbnail %}
+                <div class="thumb">
+                    <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
+                </div>
+                {% endif %}
+
+                <!--Decide whether to display the title of site or page-->
+                <h3 class="header author-header" itemprop="headline">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h3>
+
+                <!--Decide whether the description or the summary-->
+                {% if page.description %}
+                <div class="author-text">
+                    <h3>{{ page.description }}</h3>
+                </div>
+                {% endif %}
+
+                <!--Decide whether to display portrait and social links by Attr:hp_sl -->
+                {% if page.hp_sl %}
+                {% include social_links.html %}
+                {% endif %}
+            </div>
+            {{ content }}
+        </div>
+    </div>
+</div>

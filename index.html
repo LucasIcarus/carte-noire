@@ -1,62 +1,40 @@
 ---
-layout: default
+layout: main
 description: "人生与学习，思索与进益"
+hp_sl: true
+index_y: true
 ---
 
+<div class="col-md-12 main content-panel">
+    <div class="articles">
 
-<div class="container-fluid index">
-    <div class="row">
+        {% if paginator.previous_page %}
+        <h2>Old Articles</h2>
+        {% else %}
+        <h2>Latest Articles</h2>
+        {% endif %}
+        <ul>
+            {% for post in paginator.posts %}
 
-        <div class="col-md-12 main content-panel">
+            <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <br/>
+                <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+            </li>
+            {% endfor %}
 
-            <div class="gravatar">
-                <img src="{{ site.baseurl }}/favicons/old_portrait.jpg" class="img-circle about-image" height="150" width="150"
-                     alt="{{ site.title }}"/>
-            </div>
-
-            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
-
-            <div class="author-text">
-                {{ page.description }}
-            </div>
-
-            {% include social_links.html %}
-        </div>
-        <div class="col-md-12 main content-panel">
-            <div class="articles">
-
-                {% if paginator.previous_page %}
-                <h2>Old Articles</h2>
-                {% else %}
-                <h2>Latest Articles</h2>
-                {% endif %}
-                <ul>
-                    {% for post in paginator.posts %}
-
-                    <li>
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        <br/>
-                        <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
-                    </li>
-                    {% endfor %}
-
-                    {% if paginator.next_page %}
-                    <li class="li_button next">
-                        <small><i><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts</a></i></small>
-                    </li>
-                    {% endif %}
-                    {% if paginator.previous_page %}
-                    <li class="li_button previous">
-                        <small><i><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts</a></i></small>
-                    </li>
-                    {% endif %}
-
-
-                </ul>
-
-            </div>
-
-        </div>
-
+            {% if paginator.next_page %}
+            <li class="li_button next">
+                <small><i><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older
+                    Posts</a></i></small>
+            </li>
+            {% endif %}
+            {% if paginator.previous_page %}
+            <li class="li_button previous">
+                <small><i><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer
+                    Posts</a></i></small>
+            </li>
+            {% endif %}
+        </ul>
     </div>
 </div>
