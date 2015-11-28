@@ -39,12 +39,6 @@ always create a h2 for keeping the margin , Hux
     </i></small>
 </div>
 
-<div class="read-time">
-    <small>
-        {{ minutes }} minute read
-    </small>
-</div>
-
 <div class="content-panel content">
     <span itemprop="articleBody">{{ content }}</span>
 
@@ -59,7 +53,9 @@ always create a h2 for keeping the margin , Hux
     <div class="tags">
         <small>
             <i class="fa fa-tags"></i>
-            {{ page.tags | join: ', ' }}
+            {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+            {% endfor %}
         </small>
     </div>
     {% endif %}
