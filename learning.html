@@ -1,13 +1,13 @@
 ---
 layout: main
 hp_sl: false
-title: "All Posts"
-description: "抓住时间的每一次跃动……"
-thumbnail: clock-o
+title: "Learning"
+description: "与其感慨路难行，不如马上出发"
+thumbnail: bookmark
 ---
 
 
-{% for post in site.posts %}
+{% for post in site.categories.life %}
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 

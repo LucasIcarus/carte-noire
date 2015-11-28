@@ -9,6 +9,7 @@ tags:
     - 交互设计
     - English-only
     - UX Design
+categories: life
 ---
 
 

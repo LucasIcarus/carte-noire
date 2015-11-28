@@ -8,6 +8,7 @@ categories:  jekyll
 tags:
  - about
  - jekyll
+categories: life
 ---
 
 Jekyll is a tool for transforming your plain text into static websites and

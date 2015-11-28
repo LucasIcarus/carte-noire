@@ -11,6 +11,7 @@ tags:
     - Windows
     - Metro
     - OS
+categories: life
 ---
 
 
