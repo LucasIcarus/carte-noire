@@ -14,6 +14,7 @@ addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 index_y: false
 post_y: false
+disqus_account: fancysblog
 
 # Social usernames/URLs
 RSS: false
@@ -41,14 +42,6 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true             # set to false if you want to use Comment without Sharing
-disqus_account: cartenoire
 
 # Analytics settings
 # Baidu Analytics

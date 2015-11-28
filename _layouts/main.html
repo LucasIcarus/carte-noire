@@ -12,9 +12,11 @@ layout: default
                 <!--Decide whether to display portrait and social links or not by Attr:hp_sl -->
                 {% if page.hp_sl %}
                 <div class="title_image">
-                    <img src="{{ site.baseurl }}/favicons/old_portrait.jpg" class="img-circle about-image"
+                    <a href="{{ site.baseurl }}/about/">
+                        <img src="{{ site.baseurl }}/favicons/old_portrait.jpg" class="img-circle about-image"
                          height="150"
                          width="150" alt="{{ site.title }}"/>
+                    </a>
                 </div>
                 {% endif %}
 

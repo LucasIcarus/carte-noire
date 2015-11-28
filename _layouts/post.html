@@ -12,9 +12,13 @@ layout: page
     <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
 </div>
 {% endif %}
-
 <h1 class="header" itemprop="name">{{ page.title }}</h1>
-
+{% comment %}
+always create a h2 for keeping the margin , Hux
+{% endcomment %}
+{% comment %} if page.subtitle {% endcomment %}
+<h2 class="subheading">{{ page.subtitle }}</h2>
+{% comment %} endif {% endcomment %}
 <div class="author">
     <small><i>
         {% if page.author %}

@@ -7,7 +7,7 @@ thumbnail: bookmark
 ---
 
 
-{% for post in site.categories.life %}
+{% for post in site.categories.learning%}
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
