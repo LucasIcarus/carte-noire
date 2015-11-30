@@ -6,11 +6,8 @@ description: "平凡者的人生和学习、思索与进益 | 凡辞，Postgradu
 baseurl: ""
 keyword: "凡辞, Fancy, FancyIcarus, fancy, fancyicarus, 絮雨倾尘, 絮尘倾依, @凡辞, 凡辞的博客, FancyBlog, 个人网站, 前端, 互联网, 微电子, 量子点, 林芝, 林芝的男朋友, MasacLin"
 url: "http://linfatz.com"
-# title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
-title_image:
-# disqus_account: cartenoire
+title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
 github_repository: https://github.com/jacobtomlinson/carte-noire
-addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 index_y: false
 post_y: false
@@ -18,42 +15,27 @@ disqus_account: fancysblog
 
 # Social usernames/URLs
 RSS: false
-weibo_username:     絮尘倾依
+weibo_username:     fancypro
 zhihu_username:     凡辞
 github_username:    LucasIcarus
-#twitter_username:  
-#facebook_username:  
+
+
 
 # Footer
 footer_left: "Modify with <i class=\"fa fa-heart\"></i> by <a href=\"http://weibo.com/fancypro\">凡辞</a> and Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-#footer_right: "on Github &nbsp;<i class=\"fa fa-github-alt\"></i> <iframe style=\"margin-left: 2px; margin-bottom:-5px;\"frameborder=\"0\" scrolling=\"0\" width=\"91px\" height=\"20px\"src=\"https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true\" ></iframe>"
+footer_right: "on Github &nbsp;<i class=\"fa fa-github-alt\"></i> <iframe style=\"margin-left: 2px; margin-bottom:-5px;\"frameborder=\"0\" scrolling=\"0\" width=\"91px\" height=\"20px\"src=\"https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true\" ></iframe>"
 
 # Build settings
+highlighter: pygments
 permalink: pretty
 exclude: [vendor]
 gems: [jekyll-paginate]
 paginate: 5
-highlighter: rouge
 
 # Markdown settings
-# markdown: redcarpet
-# redcarpet:
-#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: linfatz.com
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，我想去看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -62,25 +44,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 #Head portrait & social_links
 hp_sl: false
 
-# Friends
-friends: [
-    {
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    },{
-        title: "",
-        href: ""
-    }
-]
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: linfatz.com

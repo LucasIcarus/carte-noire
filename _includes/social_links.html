@@ -1,6 +1,6 @@
 <p class="links">
     {% if site.weibo_username %}
-    <a href="http://www.weibo.com/{{ site.twitter_username }}" target="_new">
+    <a href="http://www.weibo.com/{{ site.weibo_username }}" target="_new">
         <i class="fa fa-weibo"></i>
     </a>
     {% endif %}
@@ -24,7 +24,9 @@
         <i class="fa fa-stack-overflow"></i>
     </a>
     {% endif %}
+    {% if site.RSS %}
     <a href="{{ site.baseurl }}/feed.xml" target="_new">
         <i class="fa fa-rss"></i>
     </a>
+    {% endif %}
 </p>
